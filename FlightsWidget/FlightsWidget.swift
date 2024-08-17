@@ -8,17 +8,18 @@
 import WidgetKit
 import SwiftUI
 
-struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
+struct Provider: TimelineProvider { // type that tells te widget when to display 
+    func placeholder(in context: Context) -> SimpleEntry { // dummy view - what it will show when there is no data
         SimpleEntry(date: Date(), emoji: "😀")
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) { // what the actual widget looks right now with the latest data
         let entry = SimpleEntry(date: Date(), emoji: "😀")
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+        // timeline - array of entries (data)
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
@@ -35,11 +36,14 @@ struct Provider: TimelineProvider {
 }
 
 struct SimpleEntry: TimelineEntry {
+    // data model
+    // this is the data
     let date: Date
     let emoji: String
 }
 
 struct FlightsWidgetEntryView : View {
+    // the view: the swiftUI
     var entry: Provider.Entry
 
     var body: some View {
@@ -54,6 +58,7 @@ struct FlightsWidgetEntryView : View {
 }
 
 struct FlightsWidget: Widget {
+     
     let kind: String = "FlightsWidget"
 
     var body: some WidgetConfiguration {

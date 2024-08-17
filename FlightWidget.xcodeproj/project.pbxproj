@@ -14,6 +14,12 @@
 		ACF88C942C7089BF001EFD1B /* FlightWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88C932C7089BF001EFD1B /* FlightWidgetTests.swift */; };
 		ACF88C9E2C7089BF001EFD1B /* FlightWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88C9D2C7089BF001EFD1B /* FlightWidgetUITests.swift */; };
 		ACF88CA02C7089BF001EFD1B /* FlightWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88C9F2C7089BF001EFD1B /* FlightWidgetUITestsLaunchTests.swift */; };
+		ACF88CB32C708E3A001EFD1B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88CB22C708E3A001EFD1B /* WidgetKit.framework */; };
+		ACF88CB52C708E3A001EFD1B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88CB42C708E3A001EFD1B /* SwiftUI.framework */; };
+		ACF88CB82C708E3A001EFD1B /* FlightsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88CB72C708E3A001EFD1B /* FlightsWidgetBundle.swift */; };
+		ACF88CBA2C708E3A001EFD1B /* FlightsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88CB92C708E3A001EFD1B /* FlightsWidget.swift */; };
+		ACF88CBC2C708E3C001EFD1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF88CBB2C708E3C001EFD1B /* Assets.xcassets */; };
+		ACF88CC02C708E3C001EFD1B /* FlightsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ACF88CB02C708E3A001EFD1B /* FlightsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = ACF88C7D2C7089BD001EFD1B;
 			remoteInfo = FlightWidget;
 		};
+		ACF88CBE2C708E3C001EFD1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88C762C7089BD001EFD1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF88CAF2C708E3A001EFD1B;
+			remoteInfo = FlightsWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACF88CC42C708E3C001EFD1B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACF88CC02C708E3C001EFD1B /* FlightsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ACF88C7E2C7089BD001EFD1B /* FlightWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +72,13 @@
 		ACF88C992C7089BF001EFD1B /* FlightWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF88C9D2C7089BF001EFD1B /* FlightWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWidgetUITests.swift; sourceTree = "<group>"; };
 		ACF88C9F2C7089BF001EFD1B /* FlightWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACF88CB02C708E3A001EFD1B /* FlightsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlightsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF88CB22C708E3A001EFD1B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		ACF88CB42C708E3A001EFD1B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		ACF88CB72C708E3A001EFD1B /* FlightsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsWidgetBundle.swift; sourceTree = "<group>"; };
+		ACF88CB92C708E3A001EFD1B /* FlightsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsWidget.swift; sourceTree = "<group>"; };
+		ACF88CBB2C708E3C001EFD1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACF88CBD2C708E3C001EFD1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +103,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACF88CAD2C708E3A001EFD1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF88CB52C708E3A001EFD1B /* SwiftUI.framework in Frameworks */,
+				ACF88CB32C708E3A001EFD1B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +121,8 @@
 				ACF88C802C7089BD001EFD1B /* FlightWidget */,
 				ACF88C922C7089BF001EFD1B /* FlightWidgetTests */,
 				ACF88C9C2C7089BF001EFD1B /* FlightWidgetUITests */,
+				ACF88CB62C708E3A001EFD1B /* FlightsWidget */,
+				ACF88CB12C708E3A001EFD1B /* Frameworks */,
 				ACF88C7F2C7089BD001EFD1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +133,7 @@
 				ACF88C7E2C7089BD001EFD1B /* FlightWidget.app */,
 				ACF88C8F2C7089BF001EFD1B /* FlightWidgetTests.xctest */,
 				ACF88C992C7089BF001EFD1B /* FlightWidgetUITests.xctest */,
+				ACF88CB02C708E3A001EFD1B /* FlightsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +175,26 @@
 			path = FlightWidgetUITests;
 			sourceTree = "<group>";
 		};
+		ACF88CB12C708E3A001EFD1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88CB22C708E3A001EFD1B /* WidgetKit.framework */,
+				ACF88CB42C708E3A001EFD1B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACF88CB62C708E3A001EFD1B /* FlightsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88CB72C708E3A001EFD1B /* FlightsWidgetBundle.swift */,
+				ACF88CB92C708E3A001EFD1B /* FlightsWidget.swift */,
+				ACF88CBB2C708E3C001EFD1B /* Assets.xcassets */,
+				ACF88CBD2C708E3C001EFD1B /* Info.plist */,
+			);
+			path = FlightsWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +205,12 @@
 				ACF88C7A2C7089BD001EFD1B /* Sources */,
 				ACF88C7B2C7089BD001EFD1B /* Frameworks */,
 				ACF88C7C2C7089BD001EFD1B /* Resources */,
+				ACF88CC42C708E3C001EFD1B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ACF88CBF2C708E3C001EFD1B /* PBXTargetDependency */,
 			);
 			name = FlightWidget;
 			productName = FlightWidget;
@@ -185,6 +253,23 @@
 			productReference = ACF88C992C7089BF001EFD1B /* FlightWidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		ACF88CAF2C708E3A001EFD1B /* FlightsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF88CC12C708E3C001EFD1B /* Build configuration list for PBXNativeTarget "FlightsWidgetExtension" */;
+			buildPhases = (
+				ACF88CAC2C708E3A001EFD1B /* Sources */,
+				ACF88CAD2C708E3A001EFD1B /* Frameworks */,
+				ACF88CAE2C708E3A001EFD1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightsWidgetExtension;
+			productName = FlightsWidgetExtension;
+			productReference = ACF88CB02C708E3A001EFD1B /* FlightsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +291,9 @@
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = ACF88C7D2C7089BD001EFD1B;
 					};
+					ACF88CAF2C708E3A001EFD1B = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = ACF88C792C7089BD001EFD1B /* Build configuration list for PBXProject "FlightWidget" */;
@@ -224,6 +312,7 @@
 				ACF88C7D2C7089BD001EFD1B /* FlightWidget */,
 				ACF88C8E2C7089BF001EFD1B /* FlightWidgetTests */,
 				ACF88C982C7089BF001EFD1B /* FlightWidgetUITests */,
+				ACF88CAF2C708E3A001EFD1B /* FlightsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +338,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF88CAE2C708E3A001EFD1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF88CBC2C708E3C001EFD1B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +378,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACF88CAC2C708E3A001EFD1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF88CB82C708E3A001EFD1B /* FlightsWidgetBundle.swift in Sources */,
+				ACF88CBA2C708E3A001EFD1B /* FlightsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +399,11 @@
 			isa = PBXTargetDependency;
 			target = ACF88C7D2C7089BD001EFD1B /* FlightWidget */;
 			targetProxy = ACF88C9A2C7089BF001EFD1B /* PBXContainerItemProxy */;
+		};
+		ACF88CBF2C708E3C001EFD1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACF88CAF2C708E3A001EFD1B /* FlightsWidgetExtension */;
+			targetProxy = ACF88CBE2C708E3C001EFD1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,6 +525,7 @@
 		ACF88CA42C7089BF001EFD1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FlightWidget/FlightWidget.entitlements;
@@ -452,6 +564,7 @@
 		ACF88CA52C7089BF001EFD1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FlightWidget/FlightWidget.entitlements;
@@ -577,6 +690,65 @@
 			};
 			name = Release;
 		};
+		ACF88CC22C708E3C001EFD1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SX49WDVKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlightsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viviannguyen.example.FlightWidget.FlightsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACF88CC32C708E3C001EFD1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SX49WDVKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlightsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viviannguyen.example.FlightWidget.FlightsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -612,6 +784,15 @@
 			buildConfigurations = (
 				ACF88CAA2C7089BF001EFD1B /* Debug */,
 				ACF88CAB2C7089BF001EFD1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF88CC12C708E3C001EFD1B /* Build configuration list for PBXNativeTarget "FlightsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF88CC22C708E3C001EFD1B /* Debug */,
+				ACF88CC32C708E3C001EFD1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACF88C822C7089BD001EFD1B /* FlightWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88C812C7089BD001EFD1B /* FlightWidgetApp.swift */; };
+		ACF88C842C7089BD001EFD1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88C832C7089BD001EFD1B /* ContentView.swift */; };
+		ACF88C862C7089BF001EFD1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF88C852C7089BF001EFD1B /* Assets.xcassets */; };
+		ACF88C8A2C7089BF001EFD1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF88C892C7089BF001EFD1B /* Preview Assets.xcassets */; };
+		ACF88C942C7089BF001EFD1B /* FlightWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88C932C7089BF001EFD1B /* FlightWidgetTests.swift */; };
+		ACF88C9E2C7089BF001EFD1B /* FlightWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88C9D2C7089BF001EFD1B /* FlightWidgetUITests.swift */; };
+		ACF88CA02C7089BF001EFD1B /* FlightWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88C9F2C7089BF001EFD1B /* FlightWidgetUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACF88C902C7089BF001EFD1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88C762C7089BD001EFD1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF88C7D2C7089BD001EFD1B;
+			remoteInfo = FlightWidget;
+		};
+		ACF88C9A2C7089BF001EFD1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88C762C7089BD001EFD1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF88C7D2C7089BD001EFD1B;
+			remoteInfo = FlightWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACF88C7E2C7089BD001EFD1B /* FlightWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF88C812C7089BD001EFD1B /* FlightWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWidgetApp.swift; sourceTree = "<group>"; };
+		ACF88C832C7089BD001EFD1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACF88C852C7089BF001EFD1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACF88C872C7089BF001EFD1B /* FlightWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlightWidget.entitlements; sourceTree = "<group>"; };
+		ACF88C892C7089BF001EFD1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACF88C8F2C7089BF001EFD1B /* FlightWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF88C932C7089BF001EFD1B /* FlightWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWidgetTests.swift; sourceTree = "<group>"; };
+		ACF88C992C7089BF001EFD1B /* FlightWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF88C9D2C7089BF001EFD1B /* FlightWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWidgetUITests.swift; sourceTree = "<group>"; };
+		ACF88C9F2C7089BF001EFD1B /* FlightWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACF88C7B2C7089BD001EFD1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF88C8C2C7089BF001EFD1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF88C962C7089BF001EFD1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACF88C752C7089BD001EFD1B = {
+			isa = PBXGroup;
+			children = (
+				ACF88C802C7089BD001EFD1B /* FlightWidget */,
+				ACF88C922C7089BF001EFD1B /* FlightWidgetTests */,
+				ACF88C9C2C7089BF001EFD1B /* FlightWidgetUITests */,
+				ACF88C7F2C7089BD001EFD1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACF88C7F2C7089BD001EFD1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88C7E2C7089BD001EFD1B /* FlightWidget.app */,
+				ACF88C8F2C7089BF001EFD1B /* FlightWidgetTests.xctest */,
+				ACF88C992C7089BF001EFD1B /* FlightWidgetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACF88C802C7089BD001EFD1B /* FlightWidget */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88C812C7089BD001EFD1B /* FlightWidgetApp.swift */,
+				ACF88C832C7089BD001EFD1B /* ContentView.swift */,
+				ACF88C852C7089BF001EFD1B /* Assets.xcassets */,
+				ACF88C872C7089BF001EFD1B /* FlightWidget.entitlements */,
+				ACF88C882C7089BF001EFD1B /* Preview Content */,
+			);
+			path = FlightWidget;
+			sourceTree = "<group>";
+		};
+		ACF88C882C7089BF001EFD1B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88C892C7089BF001EFD1B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACF88C922C7089BF001EFD1B /* FlightWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88C932C7089BF001EFD1B /* FlightWidgetTests.swift */,
+			);
+			path = FlightWidgetTests;
+			sourceTree = "<group>";
+		};
+		ACF88C9C2C7089BF001EFD1B /* FlightWidgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88C9D2C7089BF001EFD1B /* FlightWidgetUITests.swift */,
+				ACF88C9F2C7089BF001EFD1B /* FlightWidgetUITestsLaunchTests.swift */,
+			);
+			path = FlightWidgetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACF88C7D2C7089BD001EFD1B /* FlightWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF88CA32C7089BF001EFD1B /* Build configuration list for PBXNativeTarget "FlightWidget" */;
+			buildPhases = (
+				ACF88C7A2C7089BD001EFD1B /* Sources */,
+				ACF88C7B2C7089BD001EFD1B /* Frameworks */,
+				ACF88C7C2C7089BD001EFD1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightWidget;
+			productName = FlightWidget;
+			productReference = ACF88C7E2C7089BD001EFD1B /* FlightWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACF88C8E2C7089BF001EFD1B /* FlightWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF88CA62C7089BF001EFD1B /* Build configuration list for PBXNativeTarget "FlightWidgetTests" */;
+			buildPhases = (
+				ACF88C8B2C7089BF001EFD1B /* Sources */,
+				ACF88C8C2C7089BF001EFD1B /* Frameworks */,
+				ACF88C8D2C7089BF001EFD1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACF88C912C7089BF001EFD1B /* PBXTargetDependency */,
+			);
+			name = FlightWidgetTests;
+			productName = FlightWidgetTests;
+			productReference = ACF88C8F2C7089BF001EFD1B /* FlightWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACF88C982C7089BF001EFD1B /* FlightWidgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF88CA92C7089BF001EFD1B /* Build configuration list for PBXNativeTarget "FlightWidgetUITests" */;
+			buildPhases = (
+				ACF88C952C7089BF001EFD1B /* Sources */,
+				ACF88C962C7089BF001EFD1B /* Frameworks */,
+				ACF88C972C7089BF001EFD1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACF88C9B2C7089BF001EFD1B /* PBXTargetDependency */,
+			);
+			name = FlightWidgetUITests;
+			productName = FlightWidgetUITests;
+			productReference = ACF88C992C7089BF001EFD1B /* FlightWidgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACF88C762C7089BD001EFD1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					ACF88C7D2C7089BD001EFD1B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					ACF88C8E2C7089BF001EFD1B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ACF88C7D2C7089BD001EFD1B;
+					};
+					ACF88C982C7089BF001EFD1B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ACF88C7D2C7089BD001EFD1B;
+					};
+				};
+			};
+			buildConfigurationList = ACF88C792C7089BD001EFD1B /* Build configuration list for PBXProject "FlightWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACF88C752C7089BD001EFD1B;
+			productRefGroup = ACF88C7F2C7089BD001EFD1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACF88C7D2C7089BD001EFD1B /* FlightWidget */,
+				ACF88C8E2C7089BF001EFD1B /* FlightWidgetTests */,
+				ACF88C982C7089BF001EFD1B /* FlightWidgetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACF88C7C2C7089BD001EFD1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF88C8A2C7089BF001EFD1B /* Preview Assets.xcassets in Resources */,
+				ACF88C862C7089BF001EFD1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF88C8D2C7089BF001EFD1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF88C972C7089BF001EFD1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACF88C7A2C7089BD001EFD1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF88C842C7089BD001EFD1B /* ContentView.swift in Sources */,
+				ACF88C822C7089BD001EFD1B /* FlightWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF88C8B2C7089BF001EFD1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF88C942C7089BF001EFD1B /* FlightWidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF88C952C7089BF001EFD1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF88CA02C7089BF001EFD1B /* FlightWidgetUITestsLaunchTests.swift in Sources */,
+				ACF88C9E2C7089BF001EFD1B /* FlightWidgetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACF88C912C7089BF001EFD1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACF88C7D2C7089BD001EFD1B /* FlightWidget */;
+			targetProxy = ACF88C902C7089BF001EFD1B /* PBXContainerItemProxy */;
+		};
+		ACF88C9B2C7089BF001EFD1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACF88C7D2C7089BD001EFD1B /* FlightWidget */;
+			targetProxy = ACF88C9A2C7089BF001EFD1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ACF88CA12C7089BF001EFD1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACF88CA22C7089BF001EFD1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		ACF88CA42C7089BF001EFD1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlightWidget/FlightWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SX49WDVKQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viviannguyen.example.FlightWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACF88CA52C7089BF001EFD1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlightWidget/FlightWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SX49WDVKQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viviannguyen.example.FlightWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACF88CA72C7089BF001EFD1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SX49WDVKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viviannguyen.example.FlightWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightWidget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlightWidget";
+			};
+			name = Debug;
+		};
+		ACF88CA82C7089BF001EFD1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SX49WDVKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viviannguyen.example.FlightWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightWidget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlightWidget";
+			};
+			name = Release;
+		};
+		ACF88CAA2C7089BF001EFD1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SX49WDVKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viviannguyen.example.FlightWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlightWidget;
+			};
+			name = Debug;
+		};
+		ACF88CAB2C7089BF001EFD1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SX49WDVKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viviannguyen.example.FlightWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlightWidget;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACF88C792C7089BD001EFD1B /* Build configuration list for PBXProject "FlightWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF88CA12C7089BF001EFD1B /* Debug */,
+				ACF88CA22C7089BF001EFD1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF88CA32C7089BF001EFD1B /* Build configuration list for PBXNativeTarget "FlightWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF88CA42C7089BF001EFD1B /* Debug */,
+				ACF88CA52C7089BF001EFD1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF88CA62C7089BF001EFD1B /* Build configuration list for PBXNativeTarget "FlightWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF88CA72C7089BF001EFD1B /* Debug */,
+				ACF88CA82C7089BF001EFD1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF88CA92C7089BF001EFD1B /* Build configuration list for PBXNativeTarget "FlightWidgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF88CAA2C7089BF001EFD1B /* Debug */,
+				ACF88CAB2C7089BF001EFD1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACF88C762C7089BD001EFD1B /* Project object */;
+}

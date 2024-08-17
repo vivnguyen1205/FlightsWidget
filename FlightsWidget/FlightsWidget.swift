@@ -10,11 +10,11 @@ import SwiftUI
 
 struct Provider: TimelineProvider { // type that tells te widget when to display 
     func placeholder(in context: Context) -> LocationDetails { // dummy view - what it will show when there is no data
-        LocationDetails(date: Date(), emoji: "😀", pointA: "LAX", pointB: "SGN")
+        LocationDetails(date: Date(), emoji: "😀", pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
     }
 
     func getSnapshot(in context: Context, completion: @escaping (LocationDetails) -> ()) { // what the actual widget looks right now with the latest data
-        let entry = LocationDetails(date: Date(), emoji: "😀",pointA: "LAX", pointB: "SGN")
+        let entry = LocationDetails(date: Date(), emoji: "😀",pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
         completion(entry)
     }
 
@@ -26,7 +26,7 @@ struct Provider: TimelineProvider { // type that tells te widget when to display
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = LocationDetails(date: entryDate, emoji: "😀",pointA: "LAX", pointB: "SGN")
+            let entry = LocationDetails(date: entryDate, emoji: "😀",pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
             entries.append(entry)
         }
 
@@ -42,6 +42,7 @@ struct LocationDetails: TimelineEntry {
     let emoji: String
     let pointA: String
     let pointB: String
+    let flightNumber: String
 }
 
 struct FlightsWidgetEntryView : View {
@@ -51,13 +52,20 @@ struct FlightsWidgetEntryView : View {
     var body: some View {
         VStack{
             HStack{
-                Text(entry.pointA).font(.title3).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Text(entry.pointA).font(.title3)
                 Text("→").font(.title3)
-                Text(entry.pointB).font(.title3).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Text(entry.pointB).font(.title3)
+                
+            }
+            HStack{
+                Text(entry.flightNumber).font(.subheadline)
+                Text("           ")
                 
             }
             Spacer()
-            Text("UA 265")
+        }
+        HStack{
+            Text("depature")
         }
     }
 }
@@ -70,7 +78,7 @@ struct FlightsWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
                 FlightsWidgetEntryView(entry: entry)
-                    .containerBackground(.white.gradient, for: .widget)
+                    .containerBackground(.indigo.gradient, for: .widget)
             } else {
                 FlightsWidgetEntryView(entry: entry)
                 // .padding()
@@ -86,8 +94,8 @@ struct FlightsWidget: Widget {
 #Preview(as: .systemSmall) {
     FlightsWidget()
 } timeline: {
-    LocationDetails(date: .now, emoji: "😀", pointA: "LAX", pointB: "SGN")
-    LocationDetails(date: .now, emoji: "🤩", pointA: "LAX", pointB: "SGN")
+    LocationDetails(date: .now, emoji: "😀", pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
+    LocationDetails(date: .now, emoji: "🤩", pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
 }
 //extension FlightInfo{
 //    

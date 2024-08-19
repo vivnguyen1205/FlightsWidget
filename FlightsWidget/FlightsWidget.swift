@@ -8,36 +8,83 @@
 import WidgetKit
 import SwiftUI
 
-struct Provider: TimelineProvider { // type that tells te widget when to display 
-    func placeholder(in context: Context) -> LocationDetails { // dummy view - what it will show when there is no data
+// Define the structure for the flight data fetched from the API
+struct FlightData: Decodable {
+    let pointA: String
+    let pointB: String
+    let flightNumber: String
+}
+
+// Define the timeline provider to manage the widget's timeline
+struct Provider: TimelineProvider {
+    
+    // Placeholder data for the widget when no data is available
+    func placeholder(in context: Context) -> LocationDetails {
         LocationDetails(date: Date(), emoji: "😀", pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (LocationDetails) -> ()) { // what the actual widget looks right now with the latest data
-        let entry = LocationDetails(date: Date(), emoji: "😀",pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
-        completion(entry)
-    }
-
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        // timeline - array of entries (data)
-        var entries: [LocationDetails] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = LocationDetails(date: entryDate, emoji: "😀",pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
-            entries.append(entry)
+    // Fetch flight data from the API
+    func fetchFlightData(completion: @escaping (FlightData?) -> Void) {
+        guard let url = URL(string: "https://fake-json-api.mock.beeceptor.com/users") else {
+            completion(nil)
+            return
         }
 
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, error == nil else {
+                completion(nil)
+                return
+            }
+
+            do {
+                let decoder = JSONDecoder()
+                let flightData = try decoder.decode(FlightData.self, from: data)
+                completion(flightData)
+            } catch {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
+
+    // Provide a snapshot of the current widget state
+    func getSnapshot(in context: Context, completion: @escaping (LocationDetails) -> ()) {
+        fetchFlightData { flightData in
+            let entry: LocationDetails
+            if let data = flightData {
+                entry = LocationDetails(date: Date(), emoji: "😀", pointA: data.pointA, pointB: data.pointB, flightNumber: data.flightNumber)
+            } else {
+                entry = LocationDetails(date: Date(), emoji: "😀", pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
+            }
+            completion(entry)
+        }
+    }
+
+    // Generate the timeline entries for the widget
+    func getTimeline(in context: Context, completion: @escaping (Timeline<LocationDetails>) -> ()) {
+        fetchFlightData { flightData in
+            var entries: [LocationDetails] = []
+            let currentDate = Date()
+
+            for hourOffset in 0 ..< 5 {
+                let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+                let entry: LocationDetails
+                if let data = flightData {
+                    entry = LocationDetails(date: entryDate, emoji: "😀", pointA: data.pointA, pointB: data.pointB, flightNumber: data.flightNumber)
+                } else {
+                    entry = LocationDetails(date: entryDate, emoji: "😀", pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
+                }
+                entries.append(entry)
+            }
+
+            let timeline = Timeline(entries: entries, policy: .atEnd)
+            completion(timeline)
+        }
     }
 }
 
+// Define the data model for the widget entries
 struct LocationDetails: TimelineEntry {
-    // data model
-    // this is the data
     let date: Date
     let emoji: String
     let pointA: String
@@ -45,60 +92,51 @@ struct LocationDetails: TimelineEntry {
     let flightNumber: String
 }
 
-struct FlightsWidgetEntryView : View {
-    // the view: the swiftUI
+// Define the view that displays the widget
+struct FlightsWidgetEntryView: View {
     var entry: LocationDetails
 
     var body: some View {
-        VStack{
-            HStack{
+        VStack {
+            HStack {
                 Text(entry.pointA).font(.title3)
                 Text("→").font(.title3)
                 Text(entry.pointB).font(.title3)
-                
             }
-            HStack{
+            HStack {
                 Text(entry.flightNumber).font(.subheadline)
-                Text("           ")
-                
             }
             Spacer()
-        }
-        HStack{
-            Text("depature")
+            HStack {
+                Text("Departure")
+            }
         }
     }
 }
 
+// Define the widget configuration
 struct FlightsWidget: Widget {
-     
     let kind: String = "FlightsWidget"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
                 FlightsWidgetEntryView(entry: entry)
-                    .containerBackground(.indigo.gradient, for: .widget)
+                    .containerBackground(.white.gradient, for: .widget)
             } else {
                 FlightsWidgetEntryView(entry: entry)
-                // .padding()
-                .background()
             }
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Flight Info Widget")
+        .description("Displays the latest flight information.")
     }
-
 }
 
+// Preview the widget in different states
 #Preview(as: .systemSmall) {
     FlightsWidget()
 } timeline: {
     LocationDetails(date: .now, emoji: "😀", pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
     LocationDetails(date: .now, emoji: "🤩", pointA: "LAX", pointB: "SGN", flightNumber: "UA 265")
 }
-//extension FlightInfo{
-//    
-//    var locationFormat: String{
-//
-//    }
+
